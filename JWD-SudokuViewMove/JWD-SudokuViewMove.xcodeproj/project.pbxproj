@@ -13,6 +13,7 @@
 		7656871A1DDC20E7005AAF22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765687181DDC20E7005AAF22 /* Main.storyboard */; };
 		7656871C1DDC20E7005AAF22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7656871B1DDC20E7005AAF22 /* Assets.xcassets */; };
 		7656871F1DDC20E7005AAF22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7656871D1DDC20E7005AAF22 /* LaunchScreen.storyboard */; };
+		765687281DDC38D9005AAF22 /* JWDItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 765687271DDC38D9005AAF22 /* JWDItemView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		7656871B1DDC20E7005AAF22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7656871E1DDC20E7005AAF22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		765687201DDC20E7005AAF22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		765687261DDC38D9005AAF22 /* JWDItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWDItemView.h; sourceTree = "<group>"; };
+		765687271DDC38D9005AAF22 /* JWDItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDItemView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				765687131DDC20E7005AAF22 /* AppDelegate.m */,
 				765687151DDC20E7005AAF22 /* ViewController.h */,
 				765687161DDC20E7005AAF22 /* ViewController.m */,
+				765687261DDC38D9005AAF22 /* JWDItemView.h */,
+				765687271DDC38D9005AAF22 /* JWDItemView.m */,
 				765687181DDC20E7005AAF22 /* Main.storyboard */,
 				7656871B1DDC20E7005AAF22 /* Assets.xcassets */,
 				7656871D1DDC20E7005AAF22 /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 				765687171DDC20E7005AAF22 /* ViewController.m in Sources */,
 				765687141DDC20E7005AAF22 /* AppDelegate.m in Sources */,
 				765687111DDC20E7005AAF22 /* main.m in Sources */,
+				765687281DDC38D9005AAF22 /* JWDItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
