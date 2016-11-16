@@ -11,9 +11,9 @@
 @interface JWDItemView ()
 
 
-@property(nonatomic, strong)UILabel       *label;//!< <#value#>
-@property(nonatomic, strong)UIImageView   *imageView;//!< <#value#>
-@property (nonatomic, assign) BOOL isAnimation;//!< <#value#>
+@property (nonatomic, strong)UILabel       *label;//!< <#value#>
+@property (nonatomic, strong)UIImageView   *imageView;//!< <#value#>
+@property (nonatomic, assign) BOOL         isAnimation;//!< <#value#>
 
 @end
 
