@@ -18,12 +18,12 @@
 @interface ViewController ()<JWDItemViewDelegate>
 
 
-
 @property(nonatomic, strong)NSMutableArray *itemTagArray;//!< 单个View 的tag
 @property(nonatomic, strong)NSMutableArray *itemTitleArray;//!<
 @property(nonatomic, strong)NSMutableArray *itemViewArray;//!< <#value#>
 @property(nonatomic, strong)UIScrollView   *scrollView;//!< <#value#>
-
+@property(nonatomic, assign)CGPoint        point;//!< <#value#>
+@property(nonatomic, strong)JWDItemView    *itemView;//!< <#value#>
 
 @end
 
@@ -110,6 +110,20 @@
 #pragma mark - JWDItemViewDelegate
 - (void)beginMoveAction:(NSString *)tag {
     NSLog(@"开始 移动");
+    JWDItemView *itemView;
+    for (int i = 0; i<self.itemViewArray.count; i++) {
+        itemView = self.itemViewArray[i];
+        if (tag == itemView.tagid) {
+            break;
+        }
+    }
+    [self.scrollView bringSubviewToFront:itemView];
+    self.point = itemView.viewPoint;
+    itemView.transform = CGAffineTransformMakeScale(1.2, 1.2);
+    
+    self.itemView = itemView;
+    
+    
 }
 - (void)moveViewAction:(NSString *)tag gesture:(UILongPressGestureRecognizer *)gesture {
     NSLog(@"移动 中");
