@@ -145,7 +145,7 @@
             JWDItemView *itemView1 = self.itemViewArray[i];
             JWDItemView *itemView2 = self.itemViewArray[i-1];
     
-            [UIView animateWithDuration:1 animations:^{
+            [UIView animateWithDuration:0.3 animations:^{
                 
                 itemView2.center = itemView1.viewPoint;
             }];
@@ -170,7 +170,7 @@
         for (NSInteger i=beginIndex; i<totagid; i++) {
             JWDItemView *itemView1 = self.itemViewArray[i];
             JWDItemView *itemView2 = self.itemViewArray[i+1];
-            [UIView animateWithDuration:1 animations:^{
+            [UIView animateWithDuration:0.3 animations:^{
                 
                 itemView2.center = itemView1.viewPoint;
             }];
@@ -222,7 +222,5 @@
         itemView.viewPoint = itemView.center;
     }
 }
-
-
 
 @end

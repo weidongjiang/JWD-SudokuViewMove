@@ -15,6 +15,7 @@
 		7656871F1DDC20E7005AAF22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7656871D1DDC20E7005AAF22 /* LaunchScreen.storyboard */; };
 		765687281DDC38D9005AAF22 /* JWDItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 765687271DDC38D9005AAF22 /* JWDItemView.m */; };
 		7656872B1DDC7419005AAF22 /* JWDSudoKuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7656872A1DDC7419005AAF22 /* JWDSudoKuView.m */; };
+		7656872D1DDCA504005AAF22 /* 1113.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7656872C1DDCA504005AAF22 /* 1113.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		765687271DDC38D9005AAF22 /* JWDItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDItemView.m; sourceTree = "<group>"; };
 		765687291DDC7419005AAF22 /* JWDSudoKuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWDSudoKuView.h; sourceTree = "<group>"; };
 		7656872A1DDC7419005AAF22 /* JWDSudoKuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWDSudoKuView.m; sourceTree = "<group>"; };
+		7656872C1DDCA504005AAF22 /* 1113.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1113.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		765687031DDC20E7005AAF22 = {
 			isa = PBXGroup;
 			children = (
+				7656872C1DDCA504005AAF22 /* 1113.gif */,
 				7656870E1DDC20E7005AAF22 /* JWD-SudokuViewMove */,
 				7656870D1DDC20E7005AAF22 /* Products */,
 			);
@@ -150,6 +153,7 @@
 			files = (
 				7656871F1DDC20E7005AAF22 /* LaunchScreen.storyboard in Resources */,
 				7656871C1DDC20E7005AAF22 /* Assets.xcassets in Resources */,
+				7656872D1DDCA504005AAF22 /* 1113.gif in Resources */,
 				7656871A1DDC20E7005AAF22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +326,7 @@
 				765687251DDC20E7005AAF22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
