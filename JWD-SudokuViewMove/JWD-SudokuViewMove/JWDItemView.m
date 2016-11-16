@@ -13,17 +13,19 @@
 
 @property(nonatomic, strong)UILabel       *label;//!< <#value#>
 @property(nonatomic, strong)UIImageView   *imageView;//!< <#value#>
+@property (nonatomic, assign) BOOL isAnimation;//!< <#value#>
 
 @end
 
 @implementation JWDItemView
 
-- (id)initWithFrame:(CGRect)frame title:(NSString *)title imageName:(NSString *)imageName{
+- (id)initWithFrame:(CGRect)frame title:(NSString *)title imageName:(NSString *)imageName isAnimation:(BOOL)isAnimation{
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor whiteColor];
         self.title = title;
         self.imageName = imageName;
+        self.isAnimation = isAnimation;
         [self setupView];
     }
     return self;
@@ -47,8 +49,10 @@
     
     
     //长按手势
-    UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(viewLongPressGesture:)];
-    [self addGestureRecognizer:longGesture];
+    if (self.isAnimation) {
+        UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(viewLongPressGesture:)];
+        [self addGestureRecognizer:longGesture];
+    }
     
     //轻拍手势
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewtapGesture:)];

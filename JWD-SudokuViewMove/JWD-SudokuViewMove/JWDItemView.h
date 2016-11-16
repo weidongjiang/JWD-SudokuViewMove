@@ -31,7 +31,7 @@
 @property (nonatomic, assign) id<JWDItemViewDelegate>delegate;//!< <#value#>
 
 
-- (id)initWithFrame:(CGRect)frame title:(NSString *)title imageName:(NSString *)imageName;
+- (id)initWithFrame:(CGRect)frame title:(NSString *)title imageName:(NSString *)imageName isAnimation:(BOOL)isAnimation;
 
 
 @end
