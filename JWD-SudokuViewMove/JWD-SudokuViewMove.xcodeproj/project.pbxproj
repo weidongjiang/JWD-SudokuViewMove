@@ -115,7 +115,7 @@
 				TargetAttributes = {
 					7656870B1DDC20E7005AAF22 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 3ZPP94SLYH;
+						DevelopmentTeam = HF526ANGZB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -277,7 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				INFOPLIST_FILE = "JWD-SudokuViewMove/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yixia.JWD-SudokuViewMove";
@@ -289,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3ZPP94SLYH;
+				DEVELOPMENT_TEAM = HF526ANGZB;
 				INFOPLIST_FILE = "JWD-SudokuViewMove/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yixia.JWD-SudokuViewMove";

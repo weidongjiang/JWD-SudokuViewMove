@@ -56,12 +56,12 @@
 }
 
 - (void)viewLongPressGesture:(UILongPressGestureRecognizer *)gesture {
-    NSLog(@"长按了");
 
     switch (gesture.state) {
         case UIGestureRecognizerStateBegan:
-            if (self.delegate && [self.delegate respondsToSelector:@selector(beginMoveAction:)]) {
-                [self.delegate beginMoveAction:self.tagid];
+                    
+            if (self.delegate && [self.delegate respondsToSelector:@selector(beginMoveAction:gesture:)]) {
+                [self.delegate beginMoveAction:self.tagid gesture:gesture];
             }
             break;
             
@@ -73,9 +73,9 @@
             break;
             
         case UIGestureRecognizerStateEnded:
-            if ([self.delegate respondsToSelector:@selector(endMoveViewAction:)]) {
+            if ([self.delegate respondsToSelector:@selector(endMoveViewAction:gesture:)]) {
                 _label.textColor = [UIColor grayColor];
-                [self.delegate endMoveViewAction:self.tagid];
+                [self.delegate endMoveViewAction:self.tagid gesture:gesture];
             }
             break;
             
@@ -87,6 +87,10 @@
 - (void)viewtapGesture:(UITapGestureRecognizer *)gesture{
     NSLog(@"点击了");
 
+    if (self.delegate && [self.delegate respondsToSelector:@selector(didItemViewAction:)]) {
+        [self.delegate didItemViewAction:self.tagid];
+    }
+    
 }
 
 @end

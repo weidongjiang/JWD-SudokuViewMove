@@ -11,9 +11,12 @@
 
 @protocol JWDItemViewDelegate <NSObject>
 
-- (void)beginMoveAction:(NSString *)tag;//移动前
+- (void)beginMoveAction:(NSString *)tag gesture:(UILongPressGestureRecognizer *)gesture;//移动前
 - (void)moveViewAction:(NSString *)tag gesture:(UILongPressGestureRecognizer *)gesture;//移动中
-- (void)endMoveViewAction:(NSString *)tag;//结束移动
+- (void)endMoveViewAction:(NSString *)tag gesture:(UILongPressGestureRecognizer *)gesture;//结束移动
+
+- (void)didItemViewAction:(NSString *)tag ;
+
 
 @end
 
