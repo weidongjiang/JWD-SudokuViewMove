@@ -20,7 +20,6 @@
 @property(nonatomic, strong)NSMutableArray *itemTagArray;//!< 单个View 的tag
 @property(nonatomic, strong)NSMutableArray *itemTitleArray;//!<
 @property(nonatomic, strong)NSMutableArray *itemViewArray;//!< <#value#>
-@property(nonatomic, strong)UIScrollView   *scrollView;//!< <#value#>
 @property(nonatomic, assign)CGPoint        itempoint;//!< <#value#>
 @property(nonatomic, assign)JWDItemView    *itemView;//!< <#value#>
 
@@ -72,7 +71,7 @@
         [self.itemViewArray addObject:itemView];
         
     }
-    self.scrollView.contentSize = CGSizeMake(KScreenWidth, heighty);
+    self.contentSize = CGSizeMake(KScreenWidth, heighty);
 
 }
 #pragma mark -
@@ -83,7 +82,7 @@
 
 - (void)beginMoveAction:(NSString *)tag gesture:(UILongPressGestureRecognizer *)gesture{
     
-    CGPoint beginPoint = [gesture locationInView:self.scrollView];
+    CGPoint beginPoint = [gesture locationInView:self];
     
     JWDItemView *itemView;
     for (int i = 0; i<self.itemViewArray.count; i++) {
@@ -92,7 +91,7 @@
             break;
         }
     }
-    [self.scrollView bringSubviewToFront:itemView];
+    [self bringSubviewToFront:itemView];
     self.itempoint = itemView.viewPoint;
     itemView.transform = CGAffineTransformMakeScale(1.1, 1.1);
     
@@ -106,7 +105,7 @@
 
     // 2 计算坐标转换
     // 2.1 实时获取 View 在superview 中的新坐标
-    CGPoint newPoint = [gesture locationInView:self.scrollView];
+    CGPoint newPoint = [gesture locationInView:self];
     
     // newPoint.x - self.itemView.frame.origin.x 相减后正好满足 手机屏幕坐标系的 移动方向 但是这是 x 的移动 要转换成 center.x的移动，才能符合过半就移动
     //移动后的X坐标
@@ -184,7 +183,7 @@
     }
 }
 - (void)endMoveViewAction:(NSString *)tag gesture:(UILongPressGestureRecognizer *)gesture{
-    CGPoint endPoint = [gesture locationInView:self.scrollView];
+    CGPoint endPoint = [gesture locationInView:self];
     
     // 移动结束 收回放大的 View
     self.itemView.center = self.itempoint;

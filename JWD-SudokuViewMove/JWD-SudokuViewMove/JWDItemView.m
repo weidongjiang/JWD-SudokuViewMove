@@ -33,7 +33,7 @@
 
 - (void)setupView {
 
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height-50, self.frame.size.width, self.frame.size.height-50)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, self.frame.size.height-50, self.frame.size.width, 50)];
     self.label = label;
     label.text = _title;
     label.userInteractionEnabled = YES;

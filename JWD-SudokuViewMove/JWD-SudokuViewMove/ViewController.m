@@ -53,7 +53,7 @@
                            nil];
     self.itemTagArray = [NSMutableArray arrayWithObjects:@"100", @"101", @"102", @"103", @"104", @"105", @"106", @"107", @"108", @"109", @"110", @"111", @"112", @"113", @"114", @"115", @"116", @"117", nil];
     
-    JWDSudoKuView *scrollView = [[JWDSudoKuView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight) withItemTitleArray:self.itemTitleArray withItemTagArray:self.itemTagArray isAnimation:YES];
+    JWDSudoKuView *scrollView = [[JWDSudoKuView alloc] initWithFrame:CGRectMake(0, 64, KScreenWidth, KScreenHeight-200) withItemTitleArray:self.itemTitleArray withItemTagArray:self.itemTagArray isAnimation:YES];
     [self.view addSubview:scrollView];
 }
 
